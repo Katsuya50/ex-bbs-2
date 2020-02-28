@@ -113,7 +113,7 @@ public class ArticleRepository {
 	public List<Article> findByUserName(String name) {
 		SqlParameterSource sqlParam = new MapSqlParameterSource().addValue("name", name + "%");
 		String sql = "SELECT a.id, a.name, a.content, com.id com_id, com.name com_name, com.content com_content,com.article_id "
-				+ "FROM articles a LEFT JOIN comments com ON a.id = com.article_id WHERE a.name LIKE :name ORDER BY a.name";
+				+ "FROM articles a LEFT JOIN comments com ON a.id = com.article_id WHERE a.name LIKE :name ORDER BY a.id ASC, com.id;";
 		List<Article> articleList = namedParameterJdbcTemplate.query(sql, sqlParam, ARTICLE_RESULT_SET_EXTRACTOR);
 
 		return articleList;
