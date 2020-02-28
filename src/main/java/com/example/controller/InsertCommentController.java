@@ -53,7 +53,7 @@ public class InsertCommentController {
 		Comment comment = new Comment();
 		BeanUtils.copyProperties(form, comment);
 		commentService.save(comment);
-		return "redirect:/joinedbbs";
+		return "redirect:/bbs";
 	}
 
 }
