@@ -12,6 +12,7 @@ import org.springframework.web.bind.annotation.RequestMapping;
 
 import com.example.domain.Article;
 import com.example.form.ArticleForm;
+import com.example.form.CommentForm;
 import com.example.service.ArticleService;
 
 @Controller
@@ -29,6 +30,16 @@ public class ShowBbsController {
 	@ModelAttribute
 	public ArticleForm setUpArticleForm() {
 		return new ArticleForm();
+	}
+	
+	/**
+	 * コメントのフォームを初期化します.
+	 * 
+	 * @return コメントフォーム
+	 */
+	@ModelAttribute
+	public CommentForm setUpCommentForm() {
+		return new CommentForm();
 	}
 	
 	
