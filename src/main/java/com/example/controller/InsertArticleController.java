@@ -14,7 +14,7 @@ import com.example.service.ArticleService;
 
 
 @Controller
-@RequestMapping("insert-article")
+@RequestMapping("/insert-article")
 public class InsertArticleController {
 
 	@Autowired

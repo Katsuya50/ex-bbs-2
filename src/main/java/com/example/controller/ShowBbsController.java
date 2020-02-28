@@ -13,7 +13,7 @@ import com.example.domain.Article;
 import com.example.service.ArticleService;
 
 @Controller
-@RequestMapping("/show-bbs")
+@RequestMapping("/bbs")
 public class ShowBbsController {
 
 	@Autowired
