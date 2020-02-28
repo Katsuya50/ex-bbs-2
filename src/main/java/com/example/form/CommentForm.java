@@ -44,7 +44,7 @@ public class CommentForm {
 	}
 	@Override
 	public String toString() {
-		return "JoinedCommentForm [articleId=" + articleId + ", name=" + name + ", content=" + content + "]";
+		return "CommentForm [articleId=" + articleId + ", name=" + name + ", content=" + content + "]";
 	}
 	
 }
