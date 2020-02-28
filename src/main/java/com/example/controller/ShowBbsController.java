@@ -19,6 +19,7 @@ public class ShowBbsController {
 	@Autowired
 	private ArticleService articleService;
 	
+	
 	@RequestMapping("")
 	public String form(Model model) {
 		// 計測スタート
