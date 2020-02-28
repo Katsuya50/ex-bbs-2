@@ -9,7 +9,7 @@ import javax.validation.constraints.Size;
  * @author igamasayuki
  *
  */
-public class JoinedCommentForm {
+public class CommentForm {
 	/** 記事ID. */
 	private Integer articleId;
 	
