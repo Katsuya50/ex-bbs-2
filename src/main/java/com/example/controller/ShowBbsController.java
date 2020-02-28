@@ -5,16 +5,21 @@ import java.time.temporal.ChronoUnit;
 import java.util.List;
 
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
+import org.springframework.web.bind.annotation.RequestMapping;
 
 import com.example.domain.Article;
 import com.example.service.ArticleService;
 
+@Controller
+@RequestMapping("/show-bbs")
 public class ShowBbsController {
 
 	@Autowired
 	private ArticleService articleService;
 	
+	@RequestMapping("")
 	public String form(Model model) {
 		// 計測スタート
 		LocalDateTime time = LocalDateTime.now();
