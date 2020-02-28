@@ -15,7 +15,6 @@ import com.example.service.ArticleService;
 @Controller
 @RequestMapping("/bbs")
 public class ShowBbsController {
-
 	@Autowired
 	private ArticleService articleService;
 	
@@ -40,6 +39,6 @@ public class ShowBbsController {
 		Long lapTime = ChronoUnit.MILLIS.between(time, LocalDateTime.now());
 		model.addAttribute("lapTime", lapTime);
 		
-		return "/bbsview";
+		return "bbs";
 	}
 }
